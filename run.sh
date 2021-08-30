@@ -6,7 +6,7 @@ if test -e ${path}
 then
     echo -e "\033[32m Vim Config File has been Copied. \033[0m" 
     cp ${path} ${savePth} 
-    mv ~/.vimrc vimrc
+    mv "${savePth}/.vimrc" "${savePth}/vimrc"
 
     echo -e "\033[32m Git Push. \033[0m"
     git add .
