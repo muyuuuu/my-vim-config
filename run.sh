@@ -9,6 +9,7 @@ then
     mv "${savePth}/.vimrc" "${savePth}/vimrc"
 
     echo -e "\033[32m Git Push. \033[0m"
+    echo ${1}
     git add .
     git commit -m "${1}"
     git push  
