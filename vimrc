@@ -22,6 +22,8 @@ set laststatus=2
 set ttimeout
 set ttimeoutlen=10
 
+colorscheme onehalfdark
+
 " https://vimjc.com/vim-plug.html
 call plug#begin('~/.vim/plugged')
 
@@ -31,4 +33,19 @@ Plug 'vim-airline/vim-airline'
 " https://wakatime.com/vim
 Plug 'wakatime/vim-wakatime'
 
+" https://github.com/preservim/nerdtree
+Plug 'preservim/nerdtree'
+
+" https://github.com/mhinz/vim-startify
+Plug 'mhinz/vim-startify'
+
+" https://github.com/jiangmiao/auto-pairs
+Plug 'jiangmiao/auto-pairs'
+
+" https://github.com/joshdick/onedark.vim
+Plug 'joshdick/onedark.vim'
 call plug#end()
+
+" 快捷键
+map <F3> :NERDTreeMirror<CR>
+map <F3> :NERDTreeToggle<CR>
