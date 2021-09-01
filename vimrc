@@ -42,8 +42,8 @@ Plug 'mhinz/vim-startify'
 " https://github.com/jiangmiao/auto-pairs
 Plug 'jiangmiao/auto-pairs'
 
-" https://github.com/joshdick/onedark.vim
-Plug 'joshdick/onedark.vim'
+" https://github.com/airblade/vim-gitgutter
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " 快捷键
