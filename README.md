@@ -10,6 +10,18 @@
 - 近期文件，`startify`: https://github.com/mhinz/vim-startify
 - 括号匹配，`auto-pairs`：https://github.com/jiangmiao/auto-pairs
 - git 更改，`gitgutter`：https://github.com/airblade/vim-gitgutter
+- 批量注释，`nerdcommenter`：https://github.com/preservim/nerdcommenter `\cc` 注释，`\cu` 取消注释。
+- 自动提示，`youcomplete`：https://github.com/ycm-core/YouCompleteMe
+这个插件的安装过于复杂，我也搜了好久，也不敢确定是哪一句命令起了作用。
+
+```bash
+sudo pacman -S clang boost llvm-libs cmake
+cd ~/.vim/plugged
+git clone https://github.com/ycm-core/YouCompleteMe.git --shallow-submodules
+git submodule update --init --recursive
+python install.py --clang-completer --system-libclang
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
+```
 
 ## 主题
 
